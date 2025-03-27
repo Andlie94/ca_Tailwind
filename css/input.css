@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply font-black py-2 px-6 rounded-3xl border-solid border-2 border-white;
+    }
+
+    .btn-primary {
+        @apply bg-secondary text-white hover:bg-background hover:text-secondary hover:border-secondary 
+        duration-200 ease-in;
+    }
+
+    .btn-secondary {
+        @apply bg-gray-500 text-white;
+    }
+}
