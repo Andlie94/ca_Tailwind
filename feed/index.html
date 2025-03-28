@@ -21,7 +21,11 @@
         <span class="block w-6 h-1 bg-white"></span>
       </div>
       <nav>
+        
         <ul class="nav_menu flex justify-end space-x-6 text-white hidden sm:flex" id="navMenu">
+          <li>
+            <input type="text" placeholder="Search..." class=" rounded-md h-6 text-primary pl-2" />
+          </li>
           <li><a href="../profile/index.html" class="hover:text-orange-600">Profile</a></li>
           <li><a href="./index.html" class="hover:text-orange-600">Feed</a></li>
         </ul>
@@ -33,10 +37,41 @@
         <li><a href="./feed/index.html" class="hover:text-orange-600">Feed</a></li>
       </ul>
     </nav>
-    <main class="flex-grow">
+    <main class="flex-grow bg-background min-h-screen px-6">
         <h1 class="text-center text-xl p-10">Velkommen til Feedpage</h1>
+        <section class="wright a comment"> <!-- wright a post section -->
+
+          <div class="bg-secondary p-4 rounded-md max-w-md mx-auto">
+            <form action="" class="flex flex-col justify-center items-center space-y-2">
+              <h2 class="text-white font-extrabold text-2xl mb-4">Writhe a post</h2>
+              <input type="text" name="overskrift" id="overskrift" placeholder="write a overskrift" class="p-2 border border-gray-300 rounded-md w-96 h-10 mt-12" />
+              <input type="text" name="post" id="new-post" placeholder="write a post" class="p-2 border border-gray-300 rounded-md w-96 h-20" />
+              <button type="submit" id="login-button" class="btn btn-primary w-36 mb-2 "> Post</button>
+            </form>
+          </div>
+          <div class="mt-4">
+            <hr class="absolute left-0 border-t border-blue-950 w-screen h-4">
+          </div>
+        </div>
+      </section>
+      <section class="sort-options"> <!-- sorting option -->
+        <div class="relative group">
+          <!-- Trigger (button) -->
+          <button class="bg-blue-800 text-white p-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring mt-10">
+            Sort Options
+          </button>
+          <ul class="absolute left-0 hidden bg-white text-black rounded-md shadow-lg mt-2 w-48 group-hover:block">
+            <li class="block px-4 py-2 hover:bg-gray-100">Alphabetical</li>
+            <li class="block px-4 py-2 hover:bg-gray-100">Popular</li>
+            <li class="block px-4 py-2 hover:bg-gray-100">Date</li>
+          </ul>
+        </div>
+      </section>
+      <section> <!-- innlegg kan legges til her -->
+
+      </section>
       </main>
-    <footer class="flex justify-center items-center py-6 bg-blue-800 mt-auto">
+    <footer class="flex justify-center items-center py-6 bg-blue-800 mt-10">
         <p class="text-white text-sm cursor-pointer">Copyright &copy; 2022 Fakebook. All rights reserved.</p>
       </footer>
   </body>
