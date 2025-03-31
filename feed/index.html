@@ -16,14 +16,14 @@
         <a href="../" class="text-white text-2xl font-bold cursor-pointer">Fakebook</a>
       </div>
       <div class="flex justify-center flex-grow">
-        <input type="text" placeholder="Search..." class="rounded-md h-6 text-primary pl-2 sm:w-80 md:w-96 lg:w-96 sm:hidden" />
+        <input type="text" placeholder="Search..." class="rounded-md h-6 text-primary pl-2 pr-2 w-32 mr-12 ml-8 sm:hidden" />
       </div>
       
-<div class="hamburger sm:hidden flex justify-end flex-col space-y-2 cursor-pointer ml-auto" id="hamburger">
-  <span class="block w-6 h-1 bg-white"></span>
-  <span class="block w-3 h-1 bg-white"></span>
-  <span class="block w-6 h-1 bg-white"></span>
-</div>
+      <div class="hamburger sm:hidden flex justify-end flex-col space-y-2 cursor-pointer ml-auto " id="hamburger">
+        <span class="block w-6 h-1 bg-white"></span>
+        <span class="block w-3 h-1 bg-white"></span>
+        <span class="block w-6 h-1 bg-white"></span>
+      </div>
       
       <nav>
         <ul class="nav_menu flex justify-end space-x-6 text-white sm:flex" id="navMenu">
@@ -43,14 +43,14 @@
     </nav>
     <main class="flex-grow bg-background min-h-screen px-6">
         <h1 class="text-center text-xl p-10">Velkommen til Feedpage</h1>
-        <section class="wright a comment"> <!-- wright a post section -->
+        <section class="wright a comment"> 
 
           <div class="bg-secondary p-4 rounded-md max-w-md mx-auto">
             <form action="" class="flex flex-col justify-center items-center space-y-2">
               <h2 class="text-white font-extrabold text-2xl mb-4">Write a post</h2>
-              <input type="text" name="overskrift" id="overskrift" placeholder="write a overskrift" class="p-2 border border-gray-300 text-primary rounded-md w-96 h-10 mt-12" />
-              <input type="text" name="post" id="new-post" placeholder="write a post" class="p-2 border border-gray-300  text-primary rounded-md w-96 h-20" />
-              <button type="submit" id="login-button" class="btn btn-primary w-36 mb-2 "> Post</button>
+              <input type="text" name="overskrift" id="overskrift" placeholder="write a overskrift" class="p-2 border border-gray-300 text-primary rounded-md w-full sm:w-96 h-10 mt-12" />
+              <input type="text" name="post" id="new-post" placeholder="write a post" class="p-2 border border-gray-300 text-primary rounded-md w-full sm:w-96 h-20" />
+              <button type="submit" id="login-button" class="btn btn-primary w-36 mb-2">Post</button>
             </form>
           </div>
           <div class="mt-4">
@@ -58,7 +58,7 @@
           </div>
         </div>
       </section>
-      <section class="sort-options"> <!-- sorting option -->
+      <section class="sort-options"> 
         <div class="relative inline-block mt-9">
           <input type="checkbox" id="sortDropdown" class="peer hidden" />
           <label for="sortDropdown" class="bg-blue-800 text-white p-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring mt-10 cursor-pointer w-48 text-center">
@@ -73,7 +73,6 @@
         </div>
       </section>
       <section>
-        
         <div class="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mx-4">
           <div class="bg-white shadow-md p-4 w-full max-w-xs lg:max-w-sm relative">
             <div class="relative w-full h-72 overflow-hidden rounded-md">
@@ -86,7 +85,7 @@
             </div>
             <h2 class="text-xl font-bold mt-4 flex justify-center">Post Title</h2>
           </div>
-
+          
           <div class="bg-white shadow-md p-4 w-full max-w-xs lg:max-w-sm relative">
             <div class="relative w-full h-72 overflow-hidden rounded-md">
               <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
