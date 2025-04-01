@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}","!./node_modules/**/*"],
+  content: ["./**/*.{html,js}", "!./node_modules/**/*"],
   theme: {
     extend: {
       colors: {
-        primary: '#0747A7', //
+        primary: '#3f704d',
         secondary: '#E9A876',
         element: '#E9A876',
         background: '#FFFDF2',
@@ -14,8 +14,13 @@ module.exports = {
       fontFamily: {
         'heading': ['Poppins', 'sans-serif'],
       },
+      margin: {
+        '128': '32rem', // 512px
+        '160': '40rem', // 640px
+        '192': '48rem', // 768px
+      },
     },
   },
   plugins: [],
-}
+};
 

@@ -8,12 +8,12 @@
     <meta name="keywords" content="tailwind, css, learning" />
     <link rel="stylesheet" href="../css/style.css" />
     <script type="module" src="../js/hamburger/hamburger.js"></script> 
-    <title>Document</title>
+    <title>Feedpage for PixelPal</title>
   </head>
   <body>
-    <header class="flex justify-between items-center bg-blue-800 px-7 py-4">
+    <header class="flex justify-between items-center bg-primary px-7 py-4">
       <div class="header_logo">
-        <a href="../" class="text-white text-2xl font-bold cursor-pointer">Fakebook</a>
+        <a href="../" class="text-white text-2xl font-bold cursor-pointer">PixelPal</a>
       </div>
       <div class="flex justify-center flex-grow">
         <input type="text" placeholder="Search..." class="rounded-md h-6 text-primary pl-2 pr-2 w-32 mr-12 ml-8 sm:hidden" />
@@ -42,9 +42,8 @@
       </ul>
     </nav>
     <main class="flex-grow bg-background min-h-screen px-6">
-        <h1 class="text-center text-xl p-10">Velkommen til Feedpage</h1>
+      <h1 class="text-center text-xl p-10 ">See what your friends has posted</h1>
         <section class="wright a comment"> 
-
           <div class="bg-secondary p-4 rounded-md max-w-md mx-auto">
             <form action="" class="flex flex-col justify-center items-center space-y-2">
               <h2 class="text-white font-extrabold text-2xl mb-4">Write a post</h2>
@@ -61,14 +60,14 @@
       <section class="sort-options"> 
         <div class="relative inline-block mt-9">
           <input type="checkbox" id="sortDropdown" class="peer hidden" />
-          <label for="sortDropdown" class="bg-blue-800 text-white p-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring mt-10 cursor-pointer w-48 text-center">
+          <label for="sortDropdown" class="bg-primary text-white p-2 rounded-md hover:bg-green-700 focus:outline-none focus:ring mt-10 cursor-pointer w-48 text-center">
             Sort Options
           </label>
         
           <ul class="absolute left-0 top-full hidden bg-white text-black rounded-md shadow-lg mt-2 w-48 peer-checked:block z-40">
-            <li class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Alphabetical</li>
-            <li class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Popular</li>
-            <li class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Date</li>
+            <li class="block px-4 py-2 hover:bg-green-200 cursor-pointer">Alphabetical</li>
+            <li class="block px-4 py-2 hover:bg-green-200 cursor-pointer">Popular</li>
+            <li class="block px-4 py-2 hover:bg-green-200 cursor-pointer">Date</li>
           </ul>
         </div>
       </section>
@@ -149,7 +148,7 @@
       </section>
       
       </main>
-    <footer class="flex justify-center items-center py-6 bg-blue-800 mt-10">
+    <footer class="flex justify-center items-center py-6 bg-primary mt-10">
         <p class="text-white text-sm cursor-pointer">Copyright &copy; 2022 Fakebook. All rights reserved.</p>
       </footer>
   </body>
