@@ -691,6 +691,30 @@ video {
   margin-top: auto;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
+}
+
+.ml-9 {
+  margin-left: 2.25rem;
+}
+
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
+}
+
+.ml-0 {
+  margin-left: 0px;
+}
+
 .block {
   display: block;
 }
@@ -941,6 +965,11 @@ video {
   background-color: rgb(233 168 118 / var(--tw-bg-opacity, 1));
 }
 
+.bg-green-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 83 45 / var(--tw-bg-opacity, 1));
+}
+
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(63 112 77 / var(--tw-bg-opacity, 1));
@@ -956,17 +985,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-green-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 83 45 / var(--tw-bg-opacity, 1));
-}
-
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
-}
-
-.bg-opacity-80 {
-  --tw-bg-opacity: 0.8;
 }
 
 .bg-cover {
@@ -1147,39 +1167,14 @@ video {
   transition-duration: 300ms;
 }
 
-.hover\:bg-blue-700:hover {
+.hover\:bg-green-200:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-gray-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-green-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-green-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-green-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 101 52 / var(--tw-bg-opacity, 1));
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-green-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-green-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 247 208 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-blue-500:hover {
@@ -1222,6 +1217,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:ml-12 {
+    margin-left: 3rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1270,6 +1269,10 @@ video {
 
   .md\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .md\:ml-12 {
+    margin-left: 3rem;
   }
 
   .md\:w-96 {
