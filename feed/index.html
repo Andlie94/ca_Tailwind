@@ -45,23 +45,20 @@
         <li><a href="../feed/index.html" class="hover:text-secondary">Feed</a></li>
       </ul>
     </nav>
-    <main class="flex-grow bg-background min-h-screen px-6">
-      <h1 class="text-center text-xl p-10 ">See what your friends has posted</h1>
-        <section class="wright a comment"> 
+    <main class="flex-grow bg-background min-h-screen">
+        <section class="flex flex-col items-center pt-10"> 
           <div class="bg-secondary p-4 rounded-md max-w-md mx-auto">
             <form action="" class="flex flex-col justify-center items-center space-y-2">
               <h2 class="text-white font-extrabold text-2xl mb-4">Write a post</h2>
-              <input type="text" name="overskrift" id="overskrift" placeholder="write a overskrift" class="p-2 border border-gray-300 text-primary rounded-md w-full sm:w-96 h-10 mt-12" />
-              <input type="text" name="post" id="new-post" placeholder="write a post" class="p-2 border border-gray-300 text-primary rounded-md w-full sm:w-96 h-20" />
+              <input type="text" name="title" id="title" placeholder="Write a title" class="p-2 border border-gray-300 text-primary rounded-md w-full sm:w-96 h-10 mt-12" />
+              <textarea name="post" id="new-post" placeholder="Write a post" class="p-2 border border-gray-300 text-primary rounded-md w-full sm:w-96 h-32 resize-none"></textarea>
+              <input type="text" name="image" id="image" placeholder="Image URL" class="p-2 border border-gray-300 text-primary rounded-md w-full sm:w-96 h-10 mt-12" />
               <button type="submit" id="login-button" class="btn btn-primary w-36 mb-2">Post</button>
             </form>
           </div>
-          <div class="mt-4">
-            <hr class="absolute left-0 border-t border-blue-950 w-screen h-4">
-          </div>
-        </div>
       </section>
       <section class="sort-options ml-0 sm:ml-12"> 
+        <h1 class="text-center text-xl p-10 font-bold text-primary ">FEED PAGE</h1>
         <div class="relative inline-block mt-9">
           <input type="checkbox" id="sortDropdown" class="peer hidden" />
           <label for="sortDropdown" class="bg-primary text-white p-2 rounded-md hover:bg-green-700 focus:outline-none focus:ring mt-10 cursor-pointer w-48 text-center">
@@ -76,7 +73,7 @@
         </div>
       </section>
       <section>
-        <div class="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mx-4">
+        <div class="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mx-4 pb-6">
           <div class="bg-white shadow-md p-4 w-full max-w-xs lg:max-w-sm relative">
             <div class="relative w-full h-72 overflow-hidden rounded-md">
               <img src="https://images.unsplash.com/photo-1530908295418-a12e326966ba?w=900&auto=format&fit=crop&q=60"
@@ -152,7 +149,7 @@
       </section>
       
       </main>
-    <footer class="flex justify-center items-center py-6 bg-primary mt-10">
+    <footer class="flex justify-center items-center py-6 bg-primary">
         <p class="text-white text-sm cursor-pointer">Copyright &copy; 2022 Fakebook. All rights reserved.</p>
       </footer>
   </body>
