@@ -32,6 +32,12 @@ Starts the live servers
 npm run start
 ```
 
+## Technologies Used
+
+JavaScript
+HTML5 & Tailwind
+Git & GitHub
+
 ## Contributing
 If you'd like to contribute to this project, feel free to fork the repository, create a new branch, and submit a pull request. 
 Make sure to run tests and ensure everything is working before submitting.
