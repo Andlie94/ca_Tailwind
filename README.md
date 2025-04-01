@@ -1,5 +1,5 @@
 # CSS framework project
-<img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNzc3xlbnwwfDB8MHx8fDI%3D" width="800">
+<img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNzc3xlbnwwfDB8MHx8fDI%3D" width="600">
 This project is a Course Assignment (CA) for a framework course at Noroff. The main objective is to learn how to install and use a CSS framework effectively. We were given the choice between Tailwind, Bootstrap, or SASS.
 For this project, only Tailwind CSS has been used.
 
