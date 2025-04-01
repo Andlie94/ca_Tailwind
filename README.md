@@ -20,11 +20,18 @@ Starts the Tailwind CSS watcher for live updates
 ```bash
 npm run dev
 ```
+
+To build the CSS for production, run the following command:
+```bash
+npm run build
+```
+
 Run the app
 Starts the live servers
 ```bash
 npm run start
 ```
+
 ## Contributing
 If you'd like to contribute to this project, feel free to fork the repository, create a new branch, and submit a pull request. 
 Make sure to run tests and ensure everything is working before submitting.
