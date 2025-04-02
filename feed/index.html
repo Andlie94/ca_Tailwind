@@ -3,41 +3,293 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is a project to learn tailwind this is the feed page" />
-    <meta name="author" content="André Strøm">
+    <meta
+      name="description"
+      content="This is a project to learn tailwind this is the feed page"
+    />
+    <meta name="author" content="André Strøm" />
     <meta name="keywords" content="tailwind, css, learning" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../favicon_io (1)/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon_io (1)/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon_io (1)/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="../css/style.css" />
-    <script type="module" src="../js/hamburger/hamburger.js"></script> 
-    <title>Document</title>
+    <script type="module" src="../js/hamburger/hamburger.js"></script>
+    <title>Feedpage for PixelPal</title>
   </head>
   <body>
-    <header class="flex justify-between items-center bg-blue-800 px-7 py-4">
+    <header class="flex justify-between items-center bg-primary px-7 py-4">
       <div class="header_logo">
-        <a href="../" class="text-white text-2xl font-bold cursor-pointer">Fakebook</a>
+        <a href="../" class="text-white text-2xl font-bold cursor-pointer"
+          >PixelPal</a
+        >
       </div>
-      <div class="hamburger sm:hidden flex flex-col space-y-2 cursor-pointer ml-auto" id="hamburger">
+      <div class="flex justify-center flex-grow">
+        <input
+          type="text"
+          placeholder="Search..."
+          class="rounded-md h-6 text-primary pl-2 pr-2 w-32 mr-12 ml-8 sm:hidden"
+        />
+      </div>
+
+      <div
+        class="hamburger sm:hidden flex justify-end flex-col space-y-2 cursor-pointer ml-auto"
+        id="hamburger"
+      >
         <span class="block w-6 h-1 bg-white"></span>
         <span class="block w-3 h-1 bg-white"></span>
         <span class="block w-6 h-1 bg-white"></span>
       </div>
+
       <nav>
-        <ul class="nav_menu flex justify-end space-x-6 text-white hidden sm:flex" id="navMenu">
-          <li><a href="../profile/index.html" class="hover:text-orange-600">Profile</a></li>
-          <li><a href="./index.html" class="hover:text-orange-600">Feed</a></li>
+        <ul
+          class="nav_menu flex justify-end space-x-6 text-white sm:flex"
+          id="navMenu"
+        >
+          <li>
+            <input
+              type="text"
+              placeholder="Search..."
+              class="rounded-md h-6 text-primary pl-2 hidden sm:block"
+            />
+          </li>
+          <li>
+            <a
+              href="../profile/index.html"
+              class="hover:text-secondary hidden sm:block"
+              >Profile</a
+            >
+          </li>
+          <li>
+            <a href="./index.html" class="hover:text-secondary hidden sm:block"
+              >Feed</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <nav id="mobileMenu" class="lg:hidden bg-blue-800 text-white hidden">
+    <nav id="mobileMenu" class="lg:hidden bg-primary text-white hidden">
       <ul class="flex flex-col items-center space-y-6 py-4">
-        <li><a href="../profile/index.html" class="hover:text-orange-600">Profile</a></li>
-        <li><a href="./feed/index.html" class="hover:text-orange-600">Feed</a></li>
+        <li>
+          <a href="../profile/index.html" class="hover:text-secondary"
+            >Profile</a
+          >
+        </li>
+        <li>
+          <a href="../feed/index.html" class="hover:text-secondary">Feed</a>
+        </li>
       </ul>
     </nav>
-    <main class="flex-grow">
-        <h1 class="text-center text-xl p-10">Velkommen til Feedpage</h1>
-      </main>
-    <footer class="flex justify-center items-center py-6 bg-blue-800 mt-auto">
-        <p class="text-white text-sm cursor-pointer">Copyright &copy; 2022 Fakebook. All rights reserved.</p>
-      </footer>
+    <main class="flex-grow bg-background min-h-screen">
+      <section class="flex flex-col items-center pt-10 mr-2 ml-2">
+        <div class="bg-secondary p-4 rounded-md w-full max-w-lg mx-auto sm:max-w-xl">
+          <form action="" class="flex flex-col justify-center items-center space-y-2">
+            <h2 class="text-white font-extrabold text-2xl mb-4">Write a post</h2>
+        
+            <label for="title" class="sr-only">Title</label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Write a title"
+              class="p-2 border border-gray-300 text-primary rounded-md w-full h-10 mt-12"
+            />
+        
+            <label for="new-post" class="sr-only">Post Content</label>
+            <textarea
+              name="post"
+              id="new-post"
+              placeholder="Write a post"
+              class="p-2 border border-gray-300 text-primary rounded-md w-full h-32 resize-none"
+            ></textarea>
+        
+            <label for="image" class="sr-only">Image URL</label>
+            <input
+              type="text"
+              name="image"
+              id="image"
+              placeholder="Image URL"
+              class="p-2 border border-gray-300 text-primary rounded-md w-full h-10 mt-12"
+            />
+        
+            <button type="submit" id="login-button" class="btn btn-primary w-36 mb-2">
+              Post
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="sort-options ml-6 sm:ml-12">
+        <h1 class="text-center text-2xl p-10 font-bold text-primary">
+          FEED PAGE
+        </h1>
+        <div class="relative inline-block mt-9">
+          <input type="checkbox" id="sortDropdown" class="peer hidden" />
+          <label
+            for="sortDropdown"
+            class="bg-primary text-white p-2 rounded-md hover:bg-green-700 focus:outline-none focus:ring mt-10 cursor-pointer w-48 text-center"
+          >
+            Sort Options
+          </label>
+
+          <ul
+            class="absolute left-0 top-full hidden bg-white text-black rounded-md shadow-lg mt-2 w-48 peer-checked:block z-40"
+          >
+            <li class="block px-4 py-2 hover:bg-green-200 cursor-pointer">
+              Alphabetical
+            </li>
+            <li class="block px-4 py-2 hover:bg-green-200 cursor-pointer">
+              Popular
+            </li>
+            <li class="block px-4 py-2 hover:bg-green-200 cursor-pointer">
+              Date
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div
+          class="grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10 mx-4 pb-6"
+        >
+          <div
+            class="bg-white shadow-md p-4 w-full max-w-xs lg:max-w-sm relative"
+          >
+            <div class="relative w-full h-72 overflow-hidden rounded-md">
+              <img
+                src="https://images.unsplash.com/photo-1530908295418-a12e326966ba?w=900&auto=format&fit=crop&q=60"
+                alt="se a pink sky from above the clouds"
+                class="w-full h-full object-cover hover:brightness-75 transition duration-300"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-bold opacity-0 hover:opacity-100 transition-opacity duration-300"
+              >
+                <p class="">THIS IS A TEXT</p>
+              </div>
+            </div>
+            <h2 class="text-xl font-bold mt-4 flex justify-center">
+              Post Title
+            </h2>
+          </div>
+
+          <div
+            class="bg-white shadow-md p-4 w-full max-w-xs lg:max-w-sm relative"
+          >
+            <div class="relative w-full h-72 overflow-hidden rounded-md">
+              <img
+                src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="see a japanese old town in the sunset"
+                class="w-full h-full object-cover hover:brightness-75 transition duration-300"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-bold opacity-0 hover:opacity-100 transition-opacity duration-300"
+              >
+                <p class="">THIS IS A TEXT</p>
+              </div>
+            </div>
+            <h2 class="text-xl font-bold mt-4 flex justify-center">
+              Post Title
+            </h2>
+          </div>
+
+          <div
+            class="bg-white shadow-md p-4 w-full max-w-xs lg:max-w-sm relative"
+          >
+            <div class="relative w-full h-72 overflow-hidden rounded-md">
+              <img
+                src="https://images.unsplash.com/photo-1620178735559-2673d1535a13?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8emVsZGF8ZW58MHx8MHx8fDI%3D"
+                alt="its a person in majorask mask for Zelda, the person is standing in the middle of a road"
+                class="w-full h-full object-cover hover:brightness-75 transition duration-300"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-bold opacity-0 hover:opacity-100 transition-opacity duration-300"
+              >
+                <p class="">THIS IS A TEXT</p>
+              </div>
+            </div>
+            <h2 class="text-xl font-bold mt-4 flex justify-center">
+              Post Title
+            </h2>
+          </div>
+
+          <div
+            class="bg-white shadow-md p-4 w-full max-w-xs lg:max-w-sm relative"
+          >
+            <div class="relative w-full h-72 overflow-hidden rounded-md">
+              <img
+                src="https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?q=80&w=2962&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="a person kick a football we see only the feet of the person"
+                class="w-full h-full object-cover hover:brightness-75 transition duration-300"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-bold opacity-0 hover:opacity-100 transition-opacity duration-300"
+              >
+                <p class="">THIS IS A TEXT</p>
+              </div>
+            </div>
+            <h2 class="text-xl font-bold mt-4 flex justify-center">
+              Post Title
+            </h2>
+          </div>
+
+          <div
+            class="bg-white shadow-md p-4 w-full max-w-xs lg:max-w-sm relative"
+          >
+            <div class="relative w-full h-72 overflow-hidden rounded-md">
+              <img
+                src="https://images.unsplash.com/photo-1592919505780-303950717480?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z29sZnxlbnwwfHwwfHx8Mg%3D%3D"
+                alt="image of a person that hit a golf ball from the bunker"
+                class="w-full h-full object-cover hover:brightness-75 transition duration-300"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-bold opacity-0 hover:opacity-100 transition-opacity duration-300"
+              >
+                <p class="">THIS IS A TEXT</p>
+              </div>
+            </div>
+            <h2 class="text-xl font-bold mt-4 flex justify-center">
+              Post Title
+            </h2>
+          </div>
+
+          <div
+            class="bg-white shadow-md p-4 w-full max-w-xs lg:max-w-sm relative"
+          >
+            <div class="relative w-full h-72 overflow-hidden rounded-md">
+              <img
+                src="https://images.unsplash.com/photo-1529419412599-7bb870e11810?q=80&w=2160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="We see a meadow with yellow flowers and an alpine mountain in the background"
+                class="w-full h-full object-cover hover:brightness-75 transition duration-300"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-bold opacity-0 hover:opacity-100 transition-opacity duration-300"
+              >
+                <p class="">THIS IS A TEXT</p>
+              </div>
+            </div>
+            <h2 class="text-xl font-bold mt-4 flex justify-center">
+              Post Title
+            </h2>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="flex justify-center items-center py-6 bg-primary">
+      <p class="text-white text-sm cursor-pointer">
+        Copyright &copy; 2022 Fakebook. All rights reserved.
+      </p>
+    </footer>
   </body>
 </html>
